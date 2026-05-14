@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memdusa.Server", "Memdusa.Server\Memdusa.Server.csproj", "{D9B8F069-CD02-46AD-B18D-1411E5060E4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memdusa.Core", "Memdusa.Core\Memdusa.Core.csproj", "{DBB81672-23F2-480F-A172-CD24D29F0A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memdusa.Medius", "Memdusa.Medius\Memdusa.Medius.csproj", "{2D754BCD-980E-4749-A558-CEEDB8707218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memdusa.TcpServer", "Memdusa.TcpServer\Memdusa.TcpServer.csproj", "{99E3E4CB-3AAF-4060-A39B-3AD984FBA6F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B8F069-CD02-46AD-B18D-1411E5060E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B8F069-CD02-46AD-B18D-1411E5060E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B8F069-CD02-46AD-B18D-1411E5060E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B8F069-CD02-46AD-B18D-1411E5060E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB81672-23F2-480F-A172-CD24D29F0A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB81672-23F2-480F-A172-CD24D29F0A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB81672-23F2-480F-A172-CD24D29F0A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB81672-23F2-480F-A172-CD24D29F0A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D754BCD-980E-4749-A558-CEEDB8707218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D754BCD-980E-4749-A558-CEEDB8707218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D754BCD-980E-4749-A558-CEEDB8707218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D754BCD-980E-4749-A558-CEEDB8707218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E3E4CB-3AAF-4060-A39B-3AD984FBA6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E3E4CB-3AAF-4060-A39B-3AD984FBA6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E3E4CB-3AAF-4060-A39B-3AD984FBA6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E3E4CB-3AAF-4060-A39B-3AD984FBA6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
