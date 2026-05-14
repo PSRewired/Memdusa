@@ -36,22 +36,31 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="mods\*">
+      <None Update="Local\*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Mods\Remote\10411.txt">
+      <None Update="Remote\10411.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Mods\Remote\10724.txt">
+      <None Update="Remote\10684.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Mods\Remote\20604-1.0.txt">
+      <None Update="Remote\10724.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Mods\Remote\20604-1.4.txt">
+      <None Update="Remote\20004-1.0.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Remote\20004-2.3.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Remote\20604-1.0.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Remote\20604-1.4.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

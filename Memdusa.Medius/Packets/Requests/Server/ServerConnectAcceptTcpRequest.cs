@@ -1,16 +1,17 @@
-using System;
-using System.Threading.Tasks;
 using Memdusa.Core.Constants;
 using Memdusa.Core.Extensions;
 using Memdusa.Core.Streams;
-using Microsoft.Extensions.Logging;
 using Memdusa.Medius.Attributes;
 using Memdusa.Medius.Extensions;
+using Memdusa.Medius.Helpers;
 using Memdusa.Medius.Packets.Responses.Server;
 using Memdusa.Medius.Tcp;
 using Memdusa.Medius.Types;
 using Memdusa.TcpServer;
-using Memdusa.Medius.Helpers;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Threading.Tasks;
 
 namespace Memdusa.Medius.Packets.Requests.Server;
 
@@ -18,10 +19,11 @@ namespace Memdusa.Medius.Packets.Requests.Server;
 public sealed class ServerConnectAcceptTcpRequest : BaseRequest
 {
     private readonly ILogger<ServerConnectAcceptTcpRequest> _logger;
-
-    public ServerConnectAcceptTcpRequest(ILogger<ServerConnectAcceptTcpRequest> logger)
+    private readonly IConfiguration _configuration;
+    public ServerConnectAcceptTcpRequest(ILogger<ServerConnectAcceptTcpRequest> logger, IConfiguration configuration)
     {
         _logger = logger;
+        _configuration = configuration;
     }
 
     public override ValueTask<byte[]> GetResponse(TcpSession session, byte[] request)
@@ -33,7 +35,7 @@ public sealed class ServerConnectAcceptTcpRequest : BaseRequest
             session.Disconnect();
             return ValueTask.FromResult(Array.Empty<byte>());
         }
-
+        var payloadMode = _configuration["PayloadDelivery:Mode"] is "Remote" or "Local" ? _configuration["PayloadDelivery:Mode"]! : "Local";
         var major = request[0];
         var minor = request[1];
         using var buffer = new PooledMemoryStream();
@@ -60,7 +62,7 @@ public sealed class ServerConnectAcceptTcpRequest : BaseRequest
 
         _logger.LogInformation("Client connected with appId {AppId} ({GameName})", appID, (AppIds)appID);
 
-        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appID, session));
+        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appID, session,payloadMode));
 
         buffer.Write(new ServerConnectAcceptTcpResponse()
             .SetClientIndex(0)

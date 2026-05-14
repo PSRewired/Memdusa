@@ -7,6 +7,7 @@ using Memdusa.Medius.Services;
 using Memdusa.Medius.Tcp;
 using Memdusa.Medius.Types;
 using Memdusa.TcpServer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System;
 using System.Text;
@@ -20,20 +21,22 @@ public sealed class HelloRequest : BaseRequest
 {
     private readonly IOptionsMonitor<CryptoOptions> _cryptoOptions;
     private readonly CryptoProvider _cryptoProvider;
+    private readonly IConfiguration _configuration;
 
-    public HelloRequest(IOptionsMonitor<CryptoOptions> cryptoOptions, CryptoProvider cryptoProvider)
+    public HelloRequest(IOptionsMonitor<CryptoOptions> cryptoOptions, CryptoProvider cryptoProvider, IConfiguration configuration)
     {
         _cryptoOptions = cryptoOptions;
         _cryptoProvider = cryptoProvider;
+        _configuration = configuration;
     }
     public override ValueTask<byte[]> GetResponse(TcpSession session, byte[] request)
     {
         ushort protocolVersion = BitConverter.ToUInt16(request.AsSpan()[2..4]);
         var parsedPacket = CertificatePacketParser.Parse(request);
-
+        var payloadMode = _configuration["PayloadDelivery:Mode"] is "Remote" or "Local" ? _configuration["PayloadDelivery:Mode"]! : "Local";
         // SOCOM 3 and CA send this packet up first. Since we don't get the ApplicationID from ServerConnectAcceptTcpRequest, we have to parse the cert to get it
         int appId = int.Parse(parsedPacket.GameId.Split(' ')[^1]);
-        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appId, session));
+        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appId, session, payloadMode));
 
         // Extracted from a hello request in a PS3 packet dump
         var cert =

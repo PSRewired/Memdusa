@@ -1,51 +1,55 @@
 {
-  "Serilog": {
-    "Using": [ "Serilog.Sinks.Console" ],
-    "WriteTo": [
-      {
-        "Name": "Console",
-        "Args": {
-          "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] [{SourceContext}] [{TcpSessionId}] {Message:lj} {NewLine}{Exception}"
+    "Serilog": {
+        "Using": [ "Serilog.Sinks.Console" ],
+        "WriteTo": [
+            {
+                "Name": "Console",
+                "Args": {
+                    "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] [{SourceContext}] [{TcpSessionId}] {Message:lj} {NewLine}{Exception}"
+                }
+            }
+        ],
+        "Properties": {
+            "Application": "Memdusa.Server",
+            "Environment": ""
+        },
+        "MinimumLevel": {
+            "Default": "Debug",
+            "Override": {
+            }
         }
-      }
-    ],
-    "Properties": {
-      "Application": "Memdusa.Server",
-      "Environment": ""
     },
-    "MinimumLevel": {
-      "Default": "Debug",
-      "Override": {
-      }
-    }
-  },
-  "Security": {
-    "Encryption": {
-      "Enabled": false,
-      "IgnoreEncryption": [ 10694, 11194, 10010, 10031 ]
-    },
-    "RSA": {
-        "PrivateKey": {
-            "N": "10315955513017997681600210131013411322695824559688299373570246338038100843097466504032586443986679280716603540690692615875074465586629501752500179100369237",
-            "E": "17",
-            "D": "4854567300243763614870687120476899445974505675147434999327174747312047455575182761195687859800492317495944895566174677168271650454805328075020357360662513"
+    "Security": {
+        "Encryption": {
+            "Enabled": false
+        },
+        "RSA": {
+            "PrivateKey": {
+                "N": "10315955513017997681600210131013411322695824559688299373570246338038100843097466504032586443986679280716603540690692615875074465586629501752500179100369237",
+                "E": "17",
+                "D": "4854567300243763614870687120476899445974505675147434999327174747312047455575182761195687859800492317495944895566174677168271650454805328075020357360662513"
+            }
         }
+    },
+    "PayloadDelivery": {
+        // Local = Payloads in the Local folder
+        // Remote = Payloads in the Remote folder
+        "Mode": "Local"
+    },
+    "AuthServer": {
+        "IpAddress": "0.0.0.0",
+        "Port": 10071
+    },
+    "UniverseManagerServer": {
+        "IpAddress": "0.0.0.0",
+        "Port": 10075
+    },
+    "LobbyServer": {
+        "IpAddress": "0.0.0.0",
+        "Port": 10077
+    },
+    "UniverseInformationServer": {
+        "IpAddress": "0.0.0.0",
+        "Port": 10080
     }
-  },
-  "AuthServer": {
-    "IpAddress": "0.0.0.0",
-    "Port": 10071
-  },
-  "UniverseManagerServer": {
-    "IpAddress": "0.0.0.0",
-    "Port": 10075
-  },
-  "LobbyServer": {
-    "IpAddress": "0.0.0.0",
-    "Port": 10077
-  },
-  "UniverseInformationServer": {
-    "IpAddress": "0.0.0.0",
-    "Port": 10080
-  }
 }
