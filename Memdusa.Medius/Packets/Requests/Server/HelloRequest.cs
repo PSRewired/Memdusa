@@ -32,6 +32,15 @@ public sealed class HelloRequest : BaseRequest
     public override ValueTask<byte[]> GetResponse(TcpSession session, byte[] request)
     {
         ushort protocolVersion = BitConverter.ToUInt16(request.AsSpan()[2..4]);
+
+        if (!_cryptoOptions.CurrentValue.Enabled || protocolVersion <= 110)
+        {
+            return ValueTask.FromResult(new ServerHelloResponse()
+                .SetProtocolVersion(protocolVersion)
+                .SetEncryptionVersion(1)
+                .Build());
+        }
+
         var parsedPacket = CertificatePacketParser.Parse(request);
         var payloadMode = _configuration["PayloadDelivery:Mode"] is "Remote" or "Local" ? _configuration["PayloadDelivery:Mode"]! : "Local";
         // SOCOM 3 and CA send this packet up first. Since we don't get the ApplicationID from ServerConnectAcceptTcpRequest, we have to parse the cert to get it
