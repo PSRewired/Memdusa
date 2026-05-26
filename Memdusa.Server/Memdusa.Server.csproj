@@ -48,6 +48,9 @@
       <None Update="Remote\10444.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="Remote\10481.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="Remote\11184.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
