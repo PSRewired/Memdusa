@@ -42,6 +42,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Update="Remote\10414.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Remote\10444.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="Remote\11184.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
