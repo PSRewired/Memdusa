@@ -21,7 +21,7 @@ Things you will need:
 
 The **BOOT.ELF** needs to be at the root of your flash drive. **Ex: F:\BOOT.ELF**
 
-Startup a game that supports the network config editor and create a network config. Leave everything as default till you get to the DNS settings
+Startup a game that supports the network config editor and create a network config. Leave everything as default till you get to the DNS settings  
 ![Network Settings Ip Config](docs/static/network-1.png)
 
 **Make sure to select manual for DNS**
@@ -91,7 +91,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 You will have to connect to the server twice. The first time you connect you will get a "Connection with the lobby server failed" message after about 10 -15 seconds. Press Triangle to disconnect. Connect again using the same network connection and the ELF will load.
 
 ### Killzone
-[Video Example](https://www.youtube.com/watch?v=hh-WkmxmWK8)
+[Video Example](https://www.youtube.com/watch?v=hh-WkmxmWK8)  
 You will have to wait for the game to give you the disconnect message. This can take up to 45 seconds to happen. Once it happens press Triangle and you will be brought back to the Network configuration selection. Pick one and press X to select it. LaunchElf will load.
 
 ## Ratchet and Clank Deadlocked and Up Your Arsenal
