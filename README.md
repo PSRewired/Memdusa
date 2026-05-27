@@ -70,7 +70,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 ## Supported Games
 
 |Game		|GameID		|AppID	|Domain |Local Payload|Remote Payload|Network Setup|
-|-----------|-----------|-------|---------------------------------------|
+|-----------|-----------|-------|---------------------------------------|---|---|---|
 |[ATV Offroad Fury 3](#ATV-Offroad-Fury-3)|SCUS_974.05|10334|atv3-prod.muis.pdonline.scea.com|❌|✅|✅|
 |[Killzone](#Killzone)	|SCUS_974.02|10724	|killzone-prod.muis.pdonline.scea.com	|✅|✅|❌|
 |[Killzone](#Killzone)	|SCES_520.04|10444	|killzone-master.online.scee.com	|❌|✅|❌|
