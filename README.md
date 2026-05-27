@@ -69,20 +69,20 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 
 ## Supported Games
 
-|Game		|GameID		|AppID	|Domain |Local Payload|Remote Payload|Network Setup|
-|-----------|-----------|-------|---------------------------------------|---|---|---|
-|[ATV Offroad Fury 3](#ATV-Offroad-Fury-3)|SCUS_974.05|10334|atv3-prod.muis.pdonline.scea.com|❌|✅|✅|
-|[Killzone](#Killzone)	|SCUS_974.02|10724	|killzone-prod.muis.pdonline.scea.com	|✅|✅|❌|
-|[Killzone](#Killzone)	|SCES_520.04|10444	|killzone-master.online.scee.com	|❌|✅|❌|
-|[Ratchet & Clank: Deadlocked](#Ratchet-and-Clank-Deadlocked-and-Up-Your-Arsenal)|SCUS_974.65|11184|ratchetdl-prod.pdonline.scea.com|❌|✅|✅|
-|[Ratchet & Clank: Up your Arsenal](#Ratchet-and-Clank-Deadlocked-and-Up-Your-Arsenal)|SCUS_973.53|10684|ratchet3-prod1.pdonline.scea.com|❌|✅|✅|
-|[SOCOM II US Navy Seals Patch r0004](#SOCOM-2)|SCUS_972.75|10472|socom2-prod.muis.pdonline.scea.com socom2-prod.pdonline.scea.com|✅|✅|✅|
-|[SOCOM II US Navy Seals](#SOCOM-2-PAL)|SCES_519.04|10481|socom2-palmaster-muis.online.scee.com|❌|✅|✅|
-|[SOCOM 3 US Navy Seals Base Game and 2.3](#SOCOM-3-and-Combined-Assault)|SCUS_974.74|20004|socom3-prod.pdonline.scea.com socom3-prod.muis.pdonline.scea.com|✅|✅|✅|
-|[SOCOM Combined Assault Base game and Patch 1.4](#SOCOM-3-and-Combined-Assault)|SCUS_975.45|20604|socomca.ps2.online.scea.com|✅|✅|✅|
-|[SOCOM Combined Assault](#SOCOM-Combined-Assault-PAL)|SCES_544.77|21014|socomca.online.scee.com|❌|✅|✅|
-|Syphon Filter - The Omega Strain|SCUS_972.64|10411|syphonfilter-prod.pdonline.scea.com|✅|✅|✅|
-|Syphon Filter - The Omega Strain|SCES_520.33|10414|sfos-palmaster.online.scee.com|✅|❌|✅|
+| Game | GameID | AppID | Domain | Local Payload | Remote Payload | Network Setup |
+|---|---|---|---|---|---|---|
+| [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ❌ | ✅ | ✅ |
+| [Killzone](#killzone) | SCUS_974.02 | 10724 | killzone-prod.muis.pdonline.scea.com | ✅ | ✅ | ❌ |
+| [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ | ✅ | ❌ |
+| [Ratchet & Clank: Deadlocked](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_974.65 | 11184 | ratchetdl-prod.pdonline.scea.com | ❌ | ✅ | ✅ |
+| [Ratchet & Clank: Up Your Arsenal](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_973.53 | 10684 | ratchet3-prod1.pdonline.scea.com | ❌ | ✅ | ✅ |
+| [SOCOM II US Navy SEALs Patch r0004](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ | ✅ | ✅ |
+| [SOCOM II US Navy SEALs](#socom-2-pal) | SCES_519.04 | 10481 | socom2-palmaster-muis.online.scee.com | ❌ | ✅ | ✅ |
+| [SOCOM 3 US Navy SEALs Base Game and 2.3](#socom-3-and-combined-assault) | SCUS_974.74 | 20004 | socom3-prod.pdonline.scea.com<br>socom3-prod.muis.pdonline.scea.com | ✅ | ✅ | ✅ |
+| [SOCOM Combined Assault Base Game and Patch 1.4](#socom-3-and-combined-assault) | SCUS_975.45 | 20604 | socomca.ps2.online.scea.com | ✅ | ✅ | ✅ |
+| [SOCOM Combined Assault](#socom-combined-assault-pal) | SCES_544.77 | 21014 | socomca.online.scee.com | ❌ | ✅ | ✅ |
+| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain) | SCUS_972.64 | 10411 | syphonfilter-prod.pdonline.scea.com | ✅ | ✅ | ✅ |
+| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain-pal) | SCES_520.33 | 10414 | sfos-palmaster.online.scee.com | ✅ | ❌ | ✅ |
 
 ## Game specific notes
 
