@@ -50,14 +50,19 @@ This is a heavily cut down version of it and only has USB support. Make sure wha
 ## Using Retro DNS as a proxy
 If you plan on using Retro DNS as your proxy you will need to edit the 99-domains.txt file to include the following:
 ```
+atv3-prod.muis.pdonline.scea.com=ip://replaceme
 killzone-prod.muis.pdonline.scea.com=ip://replaceme
+killzone-master.online.scee.com=ip://replaceme
+ratchetdl-prod.pdonline.scea.com=ip://replaceme
+ratchet3-prod1.pdonline.scea.com=ip://replaceme
 socom2-prod.pdonline.scea.com=ip://replaceme
 socom2-prod.muis.pdonline.scea.com=ip://replaceme
+socom2-palmaster-muis.online.scee.com=ip://replaceme
 socom3-prod.muis.pdonline.scea.com=ip://replaceme
+socomca.ps2.online.scea.com=ip://replaceme
+socomca.online.scee.com=ip://replaceme
 syphonfilter-prod.pdonline.scea.com=ip://replaceme
 sfos-palmaster.online.scee.com=ip://replaceme
-socomca.ps2.online.scea.com=ip://replaceme
-
 // Catch all, unless you are running a DNAS repo you'll need this so it gets to ours
 *=dns://67.222.156.250
 ```
@@ -113,7 +118,7 @@ The game will get up to the universe selection screen. Wait about 10 seconds and
 [SOCOM 3 Video Example](https://www.youtube.com/watch?v=OrmdIRzWlsM)  
 [SOCOM Combined Assault Video Example](https://www.youtube.com/watch?v=sfj36jfQ2do)  
 The version of the payload you need to use will depend on what version of the game you are currently on. On the main menu you will see OCN vx.x and a date. Refer to the image:  
-![SOCOM 3 & CA OCN Version](docs/static/S3CAOCNVersion.png)
+![SOCOM 3 & CA OCN Version](docs/static/S3CAOCNVersion.png)  
 For both of these games you will connect and wait for a Connection Failure message to appear at the Universe Selection screen. Once you see this, wait about 10 seconds and then press X to continue. LaunchElf will now load.
 
 **This part below is only if you are hosting the server yourself:**  
