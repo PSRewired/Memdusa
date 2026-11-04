@@ -9,9 +9,9 @@ namespace Memdusa.Medius.Helpers
 {
     public class GameFixHelper
     {
-        public static byte[] BuildPatchPayLoads(int applicationId, TcpSession playerTcpSession,string payloadLocation)
+        public static byte[] BuildPatchPayLoads(int applicationId, TcpSession playerTcpSession)
         {
-            string[] paths = [payloadLocation, $"{applicationId}.txt"];
+            string[] paths = ["Mods", $"{applicationId}.txt"];
             var fullPath = Path.Combine(paths);
 
             if (!File.Exists(fullPath))

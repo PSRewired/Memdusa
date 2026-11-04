@@ -11,6 +11,7 @@ public enum AppIds
     Socom_2_PAL = 10481, //SCES_519.04
     Socom_3_NTSC = 20004, //SCUS_974.74
     Socom_Combined_Assault_NTSC = 20604, //SCUS_975.45
+    Socom_Combined_Assault_PAL = 21014, //SCES_544.77
     Syphon_Filter_The_Omega_Strain_NTSC = 10411, //SCUS_972.64
     Syphon_Filter_The_Omega_Strain_PAL = 10414, //SCES_520.33
 }

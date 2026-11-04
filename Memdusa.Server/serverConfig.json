@@ -31,11 +31,6 @@
             }
         }
     },
-    "PayloadDelivery": {
-        // Local = Payloads in the Local folder
-        // Remote = Payloads in the Remote folder
-        "Mode": "Local"
-    },
     "AuthServer": {
         "IpAddress": "0.0.0.0",
         "Port": 10071

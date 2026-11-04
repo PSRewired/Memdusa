@@ -35,7 +35,7 @@ public sealed class ServerConnectAcceptTcpRequest : BaseRequest
             session.Disconnect();
             return ValueTask.FromResult(Array.Empty<byte>());
         }
-        var payloadMode = _configuration["PayloadDelivery:Mode"] is "Remote" or "Local" ? _configuration["PayloadDelivery:Mode"]! : "Local";
+       
         var major = request[0];
         var minor = request[1];
         using var buffer = new PooledMemoryStream();
@@ -62,7 +62,7 @@ public sealed class ServerConnectAcceptTcpRequest : BaseRequest
 
         _logger.LogInformation("Client connected with appId {AppId} ({GameName})", appID, (AppIds)appID);
 
-        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appID, session,payloadMode));
+        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appID, session));
 
         buffer.Write(new ServerConnectAcceptTcpResponse()
             .SetClientIndex(0)

@@ -36,52 +36,46 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Local\*">
+      <None Update="Mods\10472.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="Remote\10414.txt">
+      <None Update="Mods\10414.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10444.txt">
+      <None Update="Mods\10444.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10481.txt">
+      <None Update="Mods\10481.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\11184.txt">
+      <None Update="Mods\11184.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10994.txt">
+      <None Update="Mods\10334.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10334.txt">
+      <None Update="Mods\10411.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10411.txt">
+      <None Update="Mods\10684.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10684.txt">
+      <None Update="Mods\10724.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10472.txt">
+      <None Update="Mods\20004-1.0.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\10724.txt">
+      <None Update="Mods\20004-2.3.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\20004-1.0.txt">
+      <None Update="Mods\21014.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\20004-2.3.txt">
+      <None Update="Mods\20604-1.0.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Remote\20604-1.0.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Remote\20604-1.4.txt">
+      <None Update="Mods\20604-1.4.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

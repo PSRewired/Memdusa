@@ -33,19 +33,18 @@ public sealed class HelloRequest : BaseRequest
     {
         ushort protocolVersion = BitConverter.ToUInt16(request.AsSpan()[2..4]);
 
-        if (!_cryptoOptions.CurrentValue.Enabled || protocolVersion <= 110)
-        {
-            return ValueTask.FromResult(new ServerHelloResponse()
-                .SetProtocolVersion(protocolVersion)
-                .SetEncryptionVersion(1)
-                .Build());
-        }
+        //if (!_cryptoOptions.CurrentValue.Enabled || protocolVersion <= 110)
+        //{
+        //    return ValueTask.FromResult(new ServerHelloResponse()
+        //        .SetProtocolVersion(protocolVersion)
+        //        .SetEncryptionVersion(1)
+        //        .Build());
+        //}
 
         var parsedPacket = CertificatePacketParser.Parse(request);
-        var payloadMode = _configuration["PayloadDelivery:Mode"] is "Remote" or "Local" ? _configuration["PayloadDelivery:Mode"]! : "Local";
         // SOCOM 3 and CA send this packet up first. Since we don't get the ApplicationID from ServerConnectAcceptTcpRequest, we have to parse the cert to get it
         int appId = int.Parse(parsedPacket.GameId.Split(' ')[^1]);
-        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appId, session, payloadMode));
+        ((BaseTcpSession)session).SendDebug(GameFixHelper.BuildPatchPayLoads(appId, session));
 
         // Extracted from a hello request in a PS3 packet dump
         var cert =
