@@ -21,7 +21,7 @@ Things you will need:
 
 The **BOOT.ELF** needs to be at the root of your flash drive. **Ex: F:\BOOT.ELF**
 
-Startup a game that supports the network config editor and create a network config. Leave everything as default till you get to the DNS settings
+Startup a game that supports the network config editor and create a network config. Leave everything as default till you get to the DNS settings  
 ![Network Settings Ip Config](docs/static/network-1.png)
 
 **Make sure to select manual for DNS**
@@ -50,14 +50,19 @@ This is a heavily cut down version of it and only has USB support. Make sure wha
 ## Using Retro DNS as a proxy
 If you plan on using Retro DNS as your proxy you will need to edit the 99-domains.txt file to include the following:
 ```
+atv3-prod.muis.pdonline.scea.com=ip://replaceme
 killzone-prod.muis.pdonline.scea.com=ip://replaceme
+killzone-master.online.scee.com=ip://replaceme
+ratchetdl-prod.pdonline.scea.com=ip://replaceme
+ratchet3-prod1.pdonline.scea.com=ip://replaceme
 socom2-prod.pdonline.scea.com=ip://replaceme
 socom2-prod.muis.pdonline.scea.com=ip://replaceme
+socom2-palmaster-muis.online.scee.com=ip://replaceme
 socom3-prod.muis.pdonline.scea.com=ip://replaceme
+socomca.ps2.online.scea.com=ip://replaceme
+socomca.online.scee.com=ip://replaceme
 syphonfilter-prod.pdonline.scea.com=ip://replaceme
 sfos-palmaster.online.scee.com=ip://replaceme
-socomca.ps2.online.scea.com=ip://replaceme
-
 // Catch all, unless you are running a DNAS repo you'll need this so it gets to ours
 *=dns://67.222.156.250
 ```
@@ -69,20 +74,20 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 
 ## Supported Games
 
-|Game		|GameID		|AppID	|Domain |Local Payload|Remote Payload|Network Setup|
-|-----------|-----------|-------|---------------------------------------|
-|[ATV Offroad Fury 3](#ATV-Offroad-Fury-3)|SCUS_974.05|10334|atv3-prod.muis.pdonline.scea.com|❌|✅|✅|
-|[Killzone](#Killzone)	|SCUS_974.02|10724	|killzone-prod.muis.pdonline.scea.com	|✅|✅|❌|
-|[Killzone](#Killzone)	|SCES_520.04|10444	|killzone-master.online.scee.com	|❌|✅|❌|
-|[Ratchet & Clank: Deadlocked](#Ratchet-and-Clank-Deadlocked-and-Up-Your-Arsenal)|SCUS_974.65|11184|ratchetdl-prod.pdonline.scea.com|❌|✅|✅|
-|[Ratchet & Clank: Up your Arsenal](#Ratchet-and-Clank-Deadlocked-and-Up-Your-Arsenal)|SCUS_973.53|10684|ratchet3-prod1.pdonline.scea.com|❌|✅|✅|
-|[SOCOM II US Navy Seals Patch r0004](#SOCOM-2)|SCUS_972.75|10472|socom2-prod.muis.pdonline.scea.com socom2-prod.pdonline.scea.com|✅|✅|✅|
-|[SOCOM II US Navy Seals](#SOCOM-2-PAL)|SCES_519.04|10481|socom2-palmaster-muis.online.scee.com|❌|✅|✅|
-|[SOCOM 3 US Navy Seals Base Game and 2.3](#SOCOM-3-and-Combined-Assault)|SCUS_974.74|20004|socom3-prod.pdonline.scea.com socom3-prod.muis.pdonline.scea.com|✅|✅|✅|
-|[SOCOM Combined Assault Base game and Patch 1.4](#SOCOM-3-and-Combined-Assault)|SCUS_975.45|20604|socomca.ps2.online.scea.com|✅|✅|✅|
-|[SOCOM Combined Assault](#SOCOM-Combined-Assault-PAL)|SCES_544.77|21014|socomca.online.scee.com|❌|✅|✅|
-|Syphon Filter - The Omega Strain|SCUS_972.64|10411|syphonfilter-prod.pdonline.scea.com|✅|✅|✅|
-|Syphon Filter - The Omega Strain|SCES_520.33|10414|sfos-palmaster.online.scee.com|✅|❌|✅|
+| Game | GameID | AppID | Domain | Local Payload | Remote Payload | Network Setup |
+|---|---|---|---|---|---|---|
+| [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ❌ | ✅ | ✅ |
+| [Killzone](#killzone) | SCUS_974.02 | 10724 | killzone-prod.muis.pdonline.scea.com | ✅ | ✅ | ❌ |
+| [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ | ✅ | ❌ |
+| [Ratchet & Clank: Deadlocked](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_974.65 | 11184 | ratchetdl-prod.pdonline.scea.com | ❌ | ✅ | ✅ |
+| [Ratchet & Clank: Up Your Arsenal](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_973.53 | 10684 | ratchet3-prod1.pdonline.scea.com | ❌ | ✅ | ✅ |
+| [SOCOM II US Navy SEALs Patch r0004](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ | ✅ | ✅ |
+| [SOCOM II US Navy SEALs](#socom-2-pal) | SCES_519.04 | 10481 | socom2-palmaster-muis.online.scee.com | ❌ | ✅ | ✅ |
+| [SOCOM 3 US Navy SEALs Base Game and 2.3](#socom-3-and-combined-assault) | SCUS_974.74 | 20004 | socom3-prod.pdonline.scea.com<br>socom3-prod.muis.pdonline.scea.com | ✅ | ✅ | ✅ |
+| [SOCOM Combined Assault Base Game and Patch 1.4](#socom-3-and-combined-assault) | SCUS_975.45 | 20604 | socomca.ps2.online.scea.com | ✅ | ✅ | ✅ |
+| [SOCOM Combined Assault](#socom-combined-assault-pal) | SCES_544.77 | 21014 | socomca.online.scee.com | ❌ | ✅ | ✅ |
+| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain) | SCUS_972.64 | 10411 | syphonfilter-prod.pdonline.scea.com | ✅ | ✅ | ✅ |
+| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain-pal) | SCES_520.33 | 10414 | sfos-palmaster.online.scee.com | ✅ | ❌ | ✅ |
 
 ## Game specific notes
 
@@ -91,7 +96,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 You will have to connect to the server twice. The first time you connect you will get a "Connection with the lobby server failed" message after about 10 -15 seconds. Press Triangle to disconnect. Connect again using the same network connection and the ELF will load.
 
 ### Killzone
-[Video Example](https://www.youtube.com/watch?v=hh-WkmxmWK8)
+[Video Example](https://www.youtube.com/watch?v=hh-WkmxmWK8)  
 You will have to wait for the game to give you the disconnect message. This can take up to 45 seconds to happen. Once it happens press Triangle and you will be brought back to the Network configuration selection. Pick one and press X to select it. LaunchElf will load.
 
 ## Ratchet and Clank Deadlocked and Up Your Arsenal
@@ -113,7 +118,7 @@ The game will get up to the universe selection screen. Wait about 10 seconds and
 [SOCOM 3 Video Example](https://www.youtube.com/watch?v=OrmdIRzWlsM)  
 [SOCOM Combined Assault Video Example](https://www.youtube.com/watch?v=sfj36jfQ2do)  
 The version of the payload you need to use will depend on what version of the game you are currently on. On the main menu you will see OCN vx.x and a date. Refer to the image:  
-![SOCOM 3 & CA OCN Version](docs/static/S3CAOCNVersion.png)
+![SOCOM 3 & CA OCN Version](docs/static/S3CAOCNVersion.png)  
 For both of these games you will connect and wait for a Connection Failure message to appear at the Universe Selection screen. Once you see this, wait about 10 seconds and then press X to continue. LaunchElf will now load.
 
 **This part below is only if you are hosting the server yourself:**  
