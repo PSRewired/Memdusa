@@ -71,12 +71,12 @@ Make sure you replace the "replaceme" text with the IP address that retro DNS sh
 On your PS2 you will need to edit your network configurations. Killzone does not have this functionality so you will need another game that does. You will need to set your DNS 1 IP to the one that you got from retro DNS.
 
 
-
 ## Supported Games
 
 | Game | GameID | AppID | Domain | Network Setup |
 |---|---|---|---|---|
 | [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ✅ |
+| [ATV Offroad Fury 4](#atv-offroad-fury-4) | SCUS_974.79 | 20354 | atv4unified.ps2.online.scea.com | ✅ |
 | [Hot Shots Golf Fore!](#hot-shots-golf-fore) | SCUS_974.01 | 10584 | hotshotsgolf-prod.muis.pdonline.scea.com | ✅ |
 | [Killzone](#killzone) | SCUS_974.02 | 10724 | killzone-prod.muis.pdonline.scea.com | ❌ |
 | [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ |
@@ -96,6 +96,10 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 ### ATV Offroad Fury 3
 [Video Example](https://www.youtube.com/watch?v=v7XG411iKBI)  
 You will have to connect to the server twice. The first time you connect you will get a "Connection with the lobby server failed" message after about 10 -15 seconds. Press Triangle to disconnect. Connect again using the same network connection and the ELF will load.
+
+### ATV Offroad Fury 4
+[Video Example](https://www.youtube.com/watch?v=6mSZa2EF7x4)  
+Go online and once the payload is sent down the game will boot your ELF file.
 
 ### Hot Shots Golf Fore
 [Video Example](https://www.youtube.com/watch?v=2mX0pZo6X6U)  
