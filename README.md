@@ -77,6 +77,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 | Game | GameID | AppID | Domain | Network Setup |
 |---|---|---|---|---|
 | [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ✅ |
+| [Hot Shots Golf Fore!](#hot-shots-golf-fore) | SCUS_974.01 | 10584 | hotshotsgolf-prod.muis.pdonline.scea.com | ✅ |
 | [Killzone](#killzone) | SCUS_974.02 | 10724 | killzone-prod.muis.pdonline.scea.com | ❌ |
 | [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ |
 | [Ratchet & Clank: Deadlocked](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_974.65 | 11184 | ratchetdl-prod.pdonline.scea.com| ✅ |
@@ -95,6 +96,10 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 ### ATV Offroad Fury 3
 [Video Example](https://www.youtube.com/watch?v=v7XG411iKBI)  
 You will have to connect to the server twice. The first time you connect you will get a "Connection with the lobby server failed" message after about 10 -15 seconds. Press Triangle to disconnect. Connect again using the same network connection and the ELF will load.
+
+### Hot Shots Golf Fore
+[Video Example](https://www.youtube.com/watch?v=2mX0pZo6X6U)  
+The game will get to the Connecting to universe server and the screen will flash a few times. Then your ELF will load.
 
 ### Killzone
 [Video Example](https://www.youtube.com/watch?v=hh-WkmxmWK8)  
