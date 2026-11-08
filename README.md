@@ -74,20 +74,21 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 
 ## Supported Games
 
-| Game | GameID | AppID | Domain | Local Payload | Remote Payload | Network Setup |
-|---|---|---|---|---|---|---|
-| [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ❌ | ✅ | ✅ |
-| [Killzone](#killzone) | SCUS_974.02 | 10724 | killzone-prod.muis.pdonline.scea.com | ✅ | ✅ | ❌ |
-| [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ | ✅ | ❌ |
-| [Ratchet & Clank: Deadlocked](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_974.65 | 11184 | ratchetdl-prod.pdonline.scea.com | ❌ | ✅ | ✅ |
-| [Ratchet & Clank: Up Your Arsenal](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_973.53 | 10684 | ratchet3-prod1.pdonline.scea.com | ❌ | ✅ | ✅ |
-| [SOCOM II US Navy SEALs Patch r0004](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ | ✅ | ✅ |
-| [SOCOM II US Navy SEALs](#socom-2-pal) | SCES_519.04 | 10481 | socom2-palmaster-muis.online.scee.com | ❌ | ✅ | ✅ |
-| [SOCOM 3 US Navy SEALs Base Game and 2.3](#socom-3-and-combined-assault) | SCUS_974.74 | 20004 | socom3-prod.pdonline.scea.com<br>socom3-prod.muis.pdonline.scea.com | ✅ | ✅ | ✅ |
-| [SOCOM Combined Assault Base Game and Patch 1.4](#socom-3-and-combined-assault) | SCUS_975.45 | 20604 | socomca.ps2.online.scea.com | ✅ | ✅ | ✅ |
-| [SOCOM Combined Assault](#socom-combined-assault-pal) | SCES_544.77 | 21014 | socomca.online.scee.com | ❌ | ✅ | ✅ |
-| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain) | SCUS_972.64 | 10411 | syphonfilter-prod.pdonline.scea.com | ✅ | ✅ | ✅ |
-| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain-pal) | SCES_520.33 | 10414 | sfos-palmaster.online.scee.com | ✅ | ❌ | ✅ |
+| Game | GameID | AppID | Domain | Network Setup |
+|---|---|---|---|---|
+| [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ✅ |
+| [Killzone](#killzone) | SCUS_974.02 | 10724 | killzone-prod.muis.pdonline.scea.com | ❌ |
+| [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ |
+| [Ratchet & Clank: Deadlocked](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_974.65 | 11184 | ratchetdl-prod.pdonline.scea.com| ✅ |
+| [Ratchet & Clank: Up Your Arsenal](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_973.53 | 10684 | ratchet3-prod1.pdonline.scea.com | ✅ |
+| [SOCOM II US Navy SEALs Patch r0001](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ |
+| [SOCOM II US Navy SEALs Patch r0004](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ |
+| [SOCOM II US Navy SEALs](#socom-2-pal) | SCES_519.04 | 10481 | socom2-palmaster-muis.online.scee.com | ✅ |
+| [SOCOM 3 US Navy SEALs Base Game and 2.3](#socom-3-and-combined-assault) | SCUS_974.74 | 20004 | socom3-prod.pdonline.scea.com<br>socom3-prod.muis.pdonline.scea.com | ✅ |
+| [SOCOM Combined Assault Base Game and Patch 1.4](#socom-3-and-combined-assault) | SCUS_975.45 | 20604 | socomca.ps2.online.scea.com | ✅ |
+| [SOCOM Combined Assault](#socom-combined-assault-pal) | SCES_544.77 | 21014 | socomca.online.scee.com | ✅ |
+| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain) | SCUS_972.64 | 10411 | syphonfilter-prod.pdonline.scea.com | ✅ |
+| [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain-pal) | SCES_520.33 | 10414 | sfos-palmaster.online.scee.com | ✅ |
 
 ## Game specific notes
 
@@ -106,8 +107,9 @@ Connect to the server. You may need to create a profile. This can be whatever yo
 
 ### SOCOM 2
 [Video Example](https://www.youtube.com/watch?v=AJ7Gr4PNqfA)  
-Your game must be on the r0004 patch already. You can find out what version you are on by looking at the bottom of the screen at the main menu.  
-![SOCOM II r0004](docs/static/SocomIIR0004.png)
+Previously this required the game to be on the r0004 patch but since updating to [This DNAS Repo](https://github.com/NoTjugotre/dnasrep-go) both r0001 and r0004 will work. The payload is the exact same for both versions.
+
+![SOCOM II](docs/static/SocomIIR0004.png)
 
 You will have to wait for the game to give you the disconnect message. This can take about 30 seconds. Once that happens press X and LaunchElf will load.
 
