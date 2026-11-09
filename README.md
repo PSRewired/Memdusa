@@ -82,6 +82,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 | [Killzone](#killzone) | SCES_520.04 | 10444 | killzone-master.online.scee.com | ❌ |
 | [Ratchet & Clank: Deadlocked](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_974.65 | 11184 | ratchetdl-prod.pdonline.scea.com| ✅ |
 | [Ratchet & Clank: Up Your Arsenal](#ratchet-and-clank-deadlocked-and-up-your-arsenal) | SCUS_973.53 | 10684 | ratchet3-prod1.pdonline.scea.com | ✅ |
+| [SOCOM II US Navy SEALs BETA](#socom-2) | SCUS_973.66 | 10202 | SOCOM2-PUBETA.pdonline.scea.com<br>SOCOM2-PUBETA.pdonline.scea.com | ✅ |
 | [SOCOM II US Navy SEALs Patch r0001](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ |
 | [SOCOM II US Navy SEALs Patch r0004](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ |
 | [SOCOM II US Navy SEALs](#socom-2-pal) | SCES_519.04 | 10481 | socom2-palmaster-muis.online.scee.com | ✅ |
@@ -114,8 +115,9 @@ You will have to wait for the game to give you the disconnect message. This can 
 [UYA Video Example](https://www.youtube.com/watch?v=neXbG9VIhew)  
 Connect to the server. You may need to create a profile. This can be whatever you want for a username and password as it does not matter. None of this gets sent to Memdusa. Once you create a profile, select it and press X to login. It will say connecting for about 20 seconds and then you will get a "Network Error" stating that the game was unable to connect to the server. Press Triangle to back out of that message and then Triangle again to back out of the profile selection screen. You will be brought back to the network selection screen, press Triangle here to back out of multiplayer. Once you do this the elf will load.
 
-### SOCOM 2
+### SOCOM 2 (r0001,r0004 and the SOCOM II beta)
 [Video Example](https://www.youtube.com/watch?v=AJ7Gr4PNqfA)  
+[Video Example SOCOM II Beta](https://www.youtube.com/watch?v=r69eUlHYPCk&feature=youtu.be)  
 Previously this required the game to be on the r0004 patch but since updating to [This DNAS Repo](https://github.com/NoTjugotre/dnasrep-go) both r0001 and r0004 will work. The payload is the exact same for both versions.
 
 ![SOCOM II](docs/static/SocomIIR0004.png)

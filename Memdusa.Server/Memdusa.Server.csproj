@@ -36,6 +36,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Update="Mods\10202.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="Mods\20354.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
