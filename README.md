@@ -86,6 +86,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 | [SOCOM II US Navy SEALs Patch r0001](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ |
 | [SOCOM II US Navy SEALs Patch r0004](#socom-2) | SCUS_972.75 | 10472 | socom2-prod.muis.pdonline.scea.com<br>socom2-prod.pdonline.scea.com | ✅ |
 | [SOCOM II US Navy SEALs](#socom-2-pal) | SCES_519.04 | 10481 | socom2-palmaster-muis.online.scee.com | ✅ |
+| [SOCOM 3 US Navy SEALs BETA](#socom-3-beta) | SCUS_974.89 | 10662 | ssocom3-pubeta.muis.pdonline.scea.com | ✅ |
 | [SOCOM 3 US Navy SEALs Base Game and 2.3](#socom-3-and-combined-assault) | SCUS_974.74 | 20004 | socom3-prod.pdonline.scea.com<br>socom3-prod.muis.pdonline.scea.com | ✅ |
 | [SOCOM Combined Assault Base Game and Patch 1.4](#socom-3-and-combined-assault) | SCUS_975.45 | 20604 | socomca.ps2.online.scea.com | ✅ |
 | [SOCOM Combined Assault](#socom-combined-assault-pal) | SCES_544.77 | 21014 | socomca.online.scee.com | ✅ |
@@ -115,17 +116,23 @@ You will have to wait for the game to give you the disconnect message. This can 
 [UYA Video Example](https://www.youtube.com/watch?v=neXbG9VIhew)  
 Connect to the server. You may need to create a profile. This can be whatever you want for a username and password as it does not matter. None of this gets sent to Memdusa. Once you create a profile, select it and press X to login. It will say connecting for about 20 seconds and then you will get a "Network Error" stating that the game was unable to connect to the server. Press Triangle to back out of that message and then Triangle again to back out of the profile selection screen. You will be brought back to the network selection screen, press Triangle here to back out of multiplayer. Once you do this the elf will load.
 
-### SOCOM 2 (r0001,r0004 and the SOCOM II beta)
+### SOCOM 2 
+(r0001,r0004 and the SOCOM II beta)
+
 [Video Example](https://www.youtube.com/watch?v=AJ7Gr4PNqfA)  
 [Video Example SOCOM II Beta](https://www.youtube.com/watch?v=r69eUlHYPCk&feature=youtu.be)  
 Previously this required the game to be on the r0004 patch but since updating to [This DNAS Repo](https://github.com/NoTjugotre/dnasrep-go) both r0001 and r0004 will work. The payload is the exact same for both versions.
 
 ![SOCOM II](docs/static/SocomIIR0004.png)
 
-You will have to wait for the game to give you the disconnect message. This can take about 30 seconds. Once that happens press X and LaunchElf will load.
+You will have to wait for the game to give you the disconnect message. This can take about 30 seconds. Once that happens press X and your elf will load.
 
 ### SOCOM 2 PAL
 The game will get up to the universe selection screen. Wait about 10 seconds and press Triangle to disconnect and go offline.
+
+### SOCOM 3 BETA
+[SOCOM 3 BETA Video Example](https://www.youtube.com/watch?v=XEeWBGtmYr4)  
+Once you connect online you will get a DNAS error as seen in the video. You can just press X and the game will continue on. Once you get the Universe screen wait 5-10 seconds and then your ELF will load.
 
 ### SOCOM 3 and Combined Assault
 [SOCOM 3 Video Example](https://www.youtube.com/watch?v=OrmdIRzWlsM)  

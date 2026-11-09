@@ -33,13 +33,14 @@ public sealed class HelloRequest : BaseRequest
     {
         ushort protocolVersion = BitConverter.ToUInt16(request.AsSpan()[2..4]);
 
-        //if (!_cryptoOptions.CurrentValue.Enabled || protocolVersion <= 110)
-        //{
-        //    return ValueTask.FromResult(new ServerHelloResponse()
-        //        .SetProtocolVersion(protocolVersion)
-        //        .SetEncryptionVersion(1)
-        //        .Build());
-        //}
+        // Shitty hack for older games specifically for this
+        if(request.Length <= 12)
+        {
+            return ValueTask.FromResult(new ServerHelloResponse()
+                .SetProtocolVersion(protocolVersion)
+                .SetEncryptionVersion(1)
+                .Build());
+        }
 
         var parsedPacket = CertificatePacketParser.Parse(request);
         // SOCOM 3 and CA send this packet up first. Since we don't get the ApplicationID from ServerConnectAcceptTcpRequest, we have to parse the cert to get it
