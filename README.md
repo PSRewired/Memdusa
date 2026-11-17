@@ -75,6 +75,7 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 
 | Game | GameID | AppID | Domain | Network Setup |
 |---|---|---|---|---|
+| [Arc the Lad: End of Darkness](#arc-the-lad-end-of-darkness) | SLUS_211.65 | 10984 | arcthelad-prod.muis.pdonline.scea.com | ✅ |
 | [ATV Offroad Fury 3](#atv-offroad-fury-3) | SCUS_974.05 | 10334 | atv3-prod.muis.pdonline.scea.com | ✅ |
 | [ATV Offroad Fury 4](#atv-offroad-fury-4) | SCUS_974.79 | 20354 | atv4unified.ps2.online.scea.com | ✅ |
 | [Hot Shots Golf Fore!](#hot-shots-golf-fore) | SCUS_974.01 | 10584 | hotshotsgolf-prod.muis.pdonline.scea.com | ✅ |
@@ -94,6 +95,10 @@ On your PS2 you will need to edit your network configurations. Killzone does not
 | [Syphon Filter: The Omega Strain](#syphon-filter-the-omega-strain-pal) | SCES_520.33 | 10414 | sfos-palmaster.online.scee.com | ✅ |
 
 ## Game specific notes
+### Arc The Lad End of Darkness  
+[Video Example](https://www.youtube.com/watch?v=kh1zWamABK0)  
+Just go online and when it gets to the universe screen your ELF will be loaded.
+
 
 ### ATV Offroad Fury 3
 [Video Example](https://www.youtube.com/watch?v=v7XG411iKBI)  
